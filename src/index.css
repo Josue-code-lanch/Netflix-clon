@@ -25,9 +25,10 @@ body {
 }
 
 .background {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   filter: brightness(0.3);
   position: absolute;
   z-index: -1;
+  height: 150vh;
 }

@@ -1,4 +1,4 @@
 .container {
-  padding: 32px 24px;
   font-family: "DM Sans Variable";
+  max-width: 100%;
 }
