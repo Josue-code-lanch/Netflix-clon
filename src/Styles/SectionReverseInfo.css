@@ -6,9 +6,8 @@
   padding: 72px 0px 72px 0;
   text-align: center;
   background-color: var(--background-color);
-  height: 72vh;
+  height: 73vh;
   margin: 0;
-  border-bottom: 7px solid rgb(44, 44, 44);
 }
 
 .section-content-1 {
@@ -21,6 +20,12 @@
 
 .section-description-1 {
   padding-left: 6px;
+}
+
+.section-image-1 {
+  max-width: 580px;
+  padding-left: 6px;
+  image-rendering: optimizeQuality;
 }
 
 .section-title-1 {

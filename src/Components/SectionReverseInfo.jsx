@@ -1,7 +1,6 @@
-import PlataformsImage from "./PlataformsImage";
 import "../Styles/SectionReverseInfo.css";
 
-export default function SectionReverseInfo({ title, text }) {
+export default function SectionReverseInfo({ title, text, img }) {
   return (
     <>
       <section className="section-info-1">
@@ -10,8 +9,12 @@ export default function SectionReverseInfo({ title, text }) {
             <h2 className="section-title-1">{title}</h2>
             <p className="section-text-1">{text}</p>
           </div>
-          <div className="section-image-1">
-            <PlataformsImage img={"mobile.jpg"} />
+          <div>
+            <img
+              className="section-image-1"
+              src={img}
+              alt="Plataforma de visualizacion"
+            />
           </div>
         </div>
       </section>

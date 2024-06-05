@@ -1,7 +1,6 @@
-import PlataformsImage from "./PlataformsImage";
 import "../Styles/SectionInfo.css";
 
-export default function SectionInfo({ title, text }) {
+export default function SectionInfo({ title, text, img }) {
   return (
     <>
       <section className="section-info">
@@ -10,8 +9,12 @@ export default function SectionInfo({ title, text }) {
             <h2 className="section-title">{title}</h2>
             <p className="section-text">{text}</p>
           </div>
-          <div className="section-image">
-            <PlataformsImage img={"tv.png"} />
+          <div>
+            <img
+              className="section-image"
+              src={img}
+              alt="Plataforma de visualizacion"
+            />
           </div>
         </div>
       </section>
