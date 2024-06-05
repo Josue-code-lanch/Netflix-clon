@@ -3,6 +3,8 @@ import Content from "./Components/Content";
 import SectionInfo from "./Components/SectionInfo";
 import SectionReverseInfo from "./Components/SectionReverseInfo";
 import PreguntasFrecuentes from "./Components/PreguntasFrecuentes";
+import NetflixEmailSignup from "./Components/NetflixEmailSignup";
+import Footer from "./Components/Footer";
 import "./App.css";
 
 function App() {
@@ -74,7 +76,10 @@ function App() {
             "La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio. Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean."
           }
         />
+        <div className="separation"></div>
+        <NetflixEmailSignup />
       </div>
+      <Footer />
     </div>
   );
 }
