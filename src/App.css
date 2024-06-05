@@ -1,4 +1,19 @@
 .container {
   font-family: "DM Sans Variable";
   max-width: 100%;
+  box-sizing: border-box;
+}
+
+.questions {
+  width: 100%;
+  border-top: 7px solid rgb(44, 44, 44);
+  padding: 72px 0 72px 0;
+}
+
+.questions-title {
+  font-size: 50px;
+  font-weight: 1000;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
 }
