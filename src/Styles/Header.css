@@ -6,3 +6,12 @@
   max-width: 100%;
   padding: 32px 24px;
 }
+
+@media screen and (max-width: 430px) {
+  .header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
