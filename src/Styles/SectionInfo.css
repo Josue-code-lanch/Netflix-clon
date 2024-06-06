@@ -43,3 +43,38 @@
   margin-top: 16px;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 430px) {
+  .section-info {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 55vh;
+    padding: 50px 0px 50px 0;
+  }
+  .section-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .section-description {
+    max-width: 100%;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+  }
+  .section-text {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+  }
+  .section-image {
+    width: 100%;
+  }
+}
