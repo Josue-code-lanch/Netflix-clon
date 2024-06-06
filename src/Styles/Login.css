@@ -33,4 +33,12 @@
 }
 
 @media screen and (max-width: 430px) {
+  .login {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  .login select {
+    width: 5%;
+  }
 }
