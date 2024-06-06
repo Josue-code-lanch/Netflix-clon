@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../Styles/PreguntasFrecuentes.css";
 
 export default function PreguntasFrecuentes({ pregunta, respuesta }) {
   const [mostrarRespuesta, setMostrarRespuesta] = useState(false);
+  const contentRef = useRef(null);
 
   const handleMostrarRespuesta = () => {
     setMostrarRespuesta(!mostrarRespuesta);
   };
+
+  useEffect(() => {
+    if (mostrarRespuesta) {
+      contentRef.current.style.maxHeight = `${contentRef.current.scrollHeight}px`;
+    } else {
+      contentRef.current.style.maxHeight = "0px";
+    }
+  }, [mostrarRespuesta]);
 
   return (
     <>
@@ -28,7 +37,9 @@ export default function PreguntasFrecuentes({ pregunta, respuesta }) {
           />
         </svg>
       </section>
-      {mostrarRespuesta && <p className="respons">{respuesta}</p>}
+      <div ref={contentRef} className="respuesta-container">
+        <p className="respuesta">{respuesta}</p>
+      </div>
     </>
   );
 }

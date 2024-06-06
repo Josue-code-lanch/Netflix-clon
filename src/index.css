@@ -3,7 +3,6 @@
   --color-texto-2: #e50914;
   --background-color: #000000;
 }
-/* dm-sans-latin-wght-normal */
 @font-face {
   font-family: "DM Sans Variable";
   font-style: normal;
@@ -25,12 +24,8 @@ body {
   box-sizing: border-box;
 }
 
-.background {
-  object-fit: cover;
-  width: 100%;
-  filter: brightness(0.3);
-  position: absolute;
-  z-index: -1;
-  height: 150vh;
-  image-rendering: optimizeQuality;
+@media screen and (max-width: 360px) {
+  body {
+    max-width: 100%;
+  }
 }

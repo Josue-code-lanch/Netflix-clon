@@ -5,11 +5,13 @@ import SectionReverseInfo from "./Components/SectionReverseInfo";
 import PreguntasFrecuentes from "./Components/PreguntasFrecuentes";
 import NetflixEmailSignup from "./Components/NetflixEmailSignup";
 import Footer from "./Components/Footer";
+import Background from "./Components/Background";
 import "./App.css";
 
 function App() {
   return (
     <div className="container">
+      <Background />
       <Header />
       <Content />
       <SectionInfo

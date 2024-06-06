@@ -12,7 +12,7 @@
   margin-top: 10px;
   font-weight: 500;
 }
-.respons {
+.respuesta {
   background-color: rgb(44, 44, 44);
   width: 90%;
   margin: 0 auto;
@@ -20,6 +20,7 @@
   font-size: 24px;
   padding: 24px;
   font-weight: 500;
+  transition: 0.3s ease-in-out;
 }
 
 .pregunta p {
@@ -30,4 +31,18 @@
 
 .pregunta:hover {
   background-color: rgb(63, 63, 63);
+}
+
+.respuesta-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.respuesta-container[style*="max-height: 0px"] .respuesta {
+  opacity: 0;
+}
+
+.respuesta-container[style*="max-height: "] .respuesta {
+  opacity: 1;
 }
