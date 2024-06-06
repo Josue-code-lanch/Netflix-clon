@@ -22,8 +22,8 @@ export default function PreguntasFrecuentes({ pregunta, respuesta }) {
           <path fill="transparent" d="M0 0h24v24H0z" />
           <path
             stroke="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             d="M12 6v12M6 12h12"
           />
         </svg>

@@ -6,13 +6,13 @@ export default function Footer() {
   return (
     <footer className="footer">
       <p className="atention-client">
-        ¿Preguntas? Llama al{" "}
+        ¿Preguntas? Llama al
         <a href="tel:0800 345 1593" rel="noopener noreferrer">
           0800 345 1593
         </a>
       </p>
       <div className="links">
-        <div>
+        <div className="columnas">
           <LinkFooter
             url={"https://help.netflix.com/es/node/412"}
             linkName={"Preguntas frecuentes"}
@@ -30,7 +30,7 @@ export default function Footer() {
             linkName={"Prueba de velocidad"}
           />
         </div>
-        <div>
+        <div className="columnas">
           <LinkFooter
             url={"https://help.netflix.com/es"}
             linkName={"Centro de ayuda"}
@@ -42,7 +42,7 @@ export default function Footer() {
             linkName={"Avisos legales"}
           />
         </div>
-        <div>
+        <div className="columnas">
           <LinkFooter
             url={
               "https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount"
@@ -62,7 +62,7 @@ export default function Footer() {
             linkName={"Solo en Netflix"}
           />
         </div>
-        <div>
+        <div className="columnas">
           <LinkFooter
             url={"https://media.netflix.com/es/"}
             linkName={"Prensa"}
@@ -78,6 +78,7 @@ export default function Footer() {
         </div>
       </div>
       <Lenguaje />
+      <p className="netflix">Netflix Argentina</p>
     </footer>
   );
 }
