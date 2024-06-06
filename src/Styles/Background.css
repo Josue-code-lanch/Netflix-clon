@@ -11,7 +11,7 @@
 @media screen and (max-width: 430px) {
   .imagen-background {
     max-width: 100%;
-    filter: brightness(0.6);
+    filter: brightness(0.5);
     max-height: 85vh;
   }
 }

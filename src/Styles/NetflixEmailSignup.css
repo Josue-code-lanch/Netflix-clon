@@ -20,7 +20,7 @@ form {
   font-size: 1rem;
   width: 350px;
   padding: 1rem;
-  background-color: rgba(53, 55, 57, 0.215);
+  background-color: rgba(29, 30, 31, 0.215);
   border: 1px solid #7f7f7f;
 }
 
@@ -37,4 +37,33 @@ form {
   color: var(--color-texto);
   background-color: var(--color-texto-2);
   cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+  .email-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    max-width: 100%;
+    font-weight: 300;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email-signup input {
+    width: 240px;
+    background-color: rgba(0, 0, 0, 0.381);
+    border-radius: 4px;
+  }
+  .email-signup button {
+    width: 151px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
 }
