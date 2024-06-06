@@ -46,3 +46,24 @@
 .respuesta-container[style*="max-height: "] .respuesta {
   opacity: 1;
 }
+
+@media screen and (max-width: 430px) {
+  .pregunta {
+    max-width: 75%;
+    padding: 18px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pregunta p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .pregunta svg {
+    width: 40px;
+  }
+  .respuesta {
+    font-size: 18px;
+    max-width: 72%;
+    font-weight: 300;
+  }
+}
